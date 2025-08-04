@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An enhanced HTML5 page with multimedia and form examples for improved structure, usability, and validation." />
+  <meta name="author" content="Oladotun Oyegoke" />
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Content & Form Demonstration</h1>
+    <p>A practical guide showcasing lists, tables, media, and form handling with built-in validation.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="list-section">
+      <h2 id="list-section">Top 5 Web Development Skills</h2>
+      <ol>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
+        <li>Version Control (Git)</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="table-section">
+      <h2 id="table-section">Weekly Study Schedule</h2>
+      <table>
+        <caption>Study Hours by Day</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML & CSS</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>JavaScript</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Accessibility</td>
+            <td>1.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="media-section">
+      <h2 id="media-section">Introduction Video</h2>
+      <video controls width="480">
+        <source src="intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Background Music</h3>
+      <audio controls>
+        <source src="background.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Sample Image</h3>
+      <figure>
+        <img src="webdev.jpg" alt="Illustration of web development" width="400" />
+        <figcaption>Web development visual concept</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="form-section">
+      <h2 id="form-section">Sign Up Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Jane Doe" /><br /><br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" /><br /><br />
+
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,}$" placeholder="Minimum 5 alphanumeric characters" /><br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" /><br /><br />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="language">Preferred Language:</label>
+          <select id="language" name="language" required>
+            <option value="">--Please choose--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select><br /><br />
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            I agree to the <a href="#" title="Terms and Conditions">terms and conditions</a>
+          </label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oladotun Oyegoke | All rights reserved.</p>
+  </footer>
+</body>
+</html>
